@@ -1,0 +1,235 @@
+.herosection-about {
+  background-image: url("../assets/project-hero1.jpg");
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+.herosection-about h3 {
+  font-size: 62px;
+  color: white;
+  padding-left: 7rem;
+  padding-top: 14rem;
+}
+.About-secondsection {
+  color: #f8f8f8;
+}
+.About-secondsection img {
+  height: 610px;
+  width: 730px;
+}
+.singlepoint {
+  display: flex;
+  position: relative;
+}
+.abttexts p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.tickmark {
+  color: #a6a182;
+  position: absolute;
+  top: 27px;
+  left: -22px;
+}
+.About-secondsection h5 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+  padding-top: 4rem;
+}
+.About-secondsection h6 {
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 4rem;
+}
+.About-secondsection h2 {
+  margin: 0;
+  color: black;
+  font-weight: 600;
+  font-size: 35px;
+}
+.About-secondsection p {
+  color: #54595f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.boldtexts p {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.About-thirdsection {
+  justify-content: center;
+}
+.aboutimg1 img {
+  height: 335px;
+  width: 526px;
+  padding-bottom: 8rem;
+}
+.counter1 h2 {
+  font-size: 35px;
+  color: white;
+  font-weight: 600;
+}
+.aboutuscounter {
+  background-color: black;
+  display: flex;
+}
+.counter-texts {
+  color: white;
+}
+.subtitledes h2 {
+  color: black;
+}
+
+.About-secondsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.About-secondsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 8rem;
+}
+.aboutimagetext {
+  gap: 50px;
+  display: flex;
+}
+.founders h3 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+  padding-top: 4rem;
+}
+.founders h6 {
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.marqueimgcontainer {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.image-wrapper img {
+  height: 300px;
+  width: 400px;
+}
+.marqueeprojects {
+  padding-bottom: 5rem;
+}
+.marqueeprojects h1 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.visionmission {
+  padding: 4rem 8rem;
+}
+.vision h1 {
+  font-size: 25px;
+  color: #a6a18a;
+}
+.mission h1 {
+  font-size: 25px;
+  color: #a6a18a;
+}
+.vision p {
+  color: #54595f;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+.mission p {
+  color: #54595f;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+.visionimage {
+  display: flex;
+  gap: 15px;
+}
+.missionimage {
+  display: flex;
+  gap: 15px;
+}
+.singlepoint p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+@media (max-width: 574px) {
+  .herosection-about h3 {
+    font-size: 50px;
+    padding-left: 2rem;
+  }
+  .visionmission {
+    padding: 0rem 2rem;
+  }
+  .directors {
+    /* padding: 4rem 4rem; */
+  }
+  .founders h3 {
+    padding-left: 2rem;
+  }
+  .About-secondsection {
+    padding: 0rem 2rem;
+  }
+  .aboutmaintext {
+    max-width: 100%;
+  }
+  .aboutimage {
+    height: 400px;
+    width: 100%;
+  }
+  .aboutimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .About-secondsection p {
+    /* padding: 0rem 2rem; */
+  }
+  .aboutimagetext {
+    width: 100%;
+  }
+  .aboutimagetext {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .About-secondsection h2 {
+    font-size: 30px;
+  }
+  .vision p {
+    line-height: 26px;
+    font-size: 19px;
+  }
+  .mission p {
+    line-height: 26px;
+    font-size: 19px;
+  }
+  .founders {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .founders h6 {
+    font-size: 29px;
+    /* padding-left: 2rem; */
+  }
+}

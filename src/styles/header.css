@@ -1,0 +1,117 @@
+.header {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  top: 0;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 150;
+  width: 100%;
+  transition: background-color 0.3s ease, height 0.3s ease, color 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 100px;
+  width: 100%;
+}
+
+.headermain {
+  width: 100%;
+}
+
+.header.scrolled .links a {
+  color: rgb(255, 255, 255) !important;
+}
+
+.header.scrolled .menu-icon .menu {
+  color: rgb(255, 255, 255); /* Ensure menu icon is white when scrolled */
+}
+
+.logo img {
+  height: 150px;
+  width: 200px;
+}
+
+.links a {
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  font-weight: 500;
+  padding-left: 12rem;
+  align-items: center;
+  display: flex;
+  gap: 85px;
+}
+
+.menu-icon {
+  display: none;
+  align-self: center;
+}
+@media (max-width: 576px) {
+  .menu-icon {
+    display: block;
+    color: white; /* Ensure the menu icon is white by default */
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px; /* Reduced padding */
+    z-index: 1000;
+    gap: 30px;
+    height: 100vh;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links a {
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Reduced padding for links */
+    margin: 0; /* Remove margin */
+    border-bottom: 1px solid #444;
+    text-decoration: none !important; /* Remove underline */
+  }
+
+  .links a:last-child {
+    border-bottom: none; /* Remove border from the last link */
+  }
+
+  .links .close-button {
+    padding-right: 21px;
+    align-self: flex-end;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}
+
+/* Additional rules to avoid conflicts */
+.links a {
+  text-decoration: none; /* Ensure no underline in default view */
+}
+
+.header.scrolled .links a {
+  color: black;
+}
+
+.header.scrolled .menu-icon .menu {
+  color: rgb(255, 255, 255); /* Ensure menu icon is white when scrolled */
+}
+
+.header {
+  padding-left: 0rem;
+}

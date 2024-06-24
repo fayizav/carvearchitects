@@ -1,0 +1,275 @@
+.herosection {
+  background-image: url("../assets/backgroundimage.jpeg");
+  background-size: cover;
+  /* height: 120vh; */
+}
+.textbutton {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.home h5 {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0px;
+  padding-top: 16rem;
+}
+.home .hero-des {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: white;
+}
+.home button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 45px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.home button:hover {
+  background: #a6a182;
+  border: none;
+  color: white; /* Ensure text color remains white */
+}
+.servicesmain {
+  padding: 8rem 0rem;
+}
+.servicesmain h3 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+}
+.servicesmainp {
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+.aboutus h3 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+}
+.imagedesabout {
+  display: flex;
+  padding-top: 2rem;
+  gap: 15px;
+}
+/* .imagedesabout p {
+  margin: 0;
+  color: #54595f;
+  font-size: 20px;
+  padding-right: 8rem;
+  padding-left: 5rem;
+  text-align: justify;
+  line-height: 35px;
+} */
+.abouteeimagee {
+  height: 650px;
+  width: 700px;
+}
+.secimg {
+  height: 100px;
+  width: 373px;
+}
+.secimg1 {
+  height: 100px;
+  width: 411px;
+}
+.secimg img {
+  height: 100%;
+  width: 100%;
+}
+.secndimgpara1 {
+  display: flex;
+  gap: 22px;
+}
+.secndimgpara {
+  display: flex;
+}
+.imagedesabout img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.latestprj h3 {
+  font-size: 20px;
+  color: #a6a182;
+  text-align: center;
+}
+.latestprj p {
+  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 35px;
+  color: black;
+  text-align: center;
+}
+.latestprj {
+  padding: 8rem 8rem;
+}
+
+.counterimage {
+  display: flex;
+  padding: 4rem 8rem;
+}
+.project-swiper {
+  padding: 8rem 0rem;
+}
+/* .counter-img:hover {
+  width: 100%;
+  transform: scale(1.04) translateX(-1%);
+  transition: 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+} */
+.firstheading {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.secondheading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.imagedesabout p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+
+  text-align: justify;
+}
+.aboutuswholepara {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+
+  width: 587px;
+  margin-top: -3rem;
+}
+
+@media (max-width: 574px) {
+  .counterimage {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0rem;
+    padding-top: 12rem;
+    align-items: center;
+    text-align: center;
+  }
+  .counter {
+    padding-right: 0rem;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .countermain {
+    width: 100%;
+  }
+  .counter .line {
+    width: 100%;
+  }
+  .secimg1 {
+    padding: 0 1rem;
+    height: 100px;
+    width: 99px;
+  }
+  .secondheading {
+    padding: 0 1rem;
+  }
+  .textbutton {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .home h5 {
+    font-size: 30px;
+  }
+
+  .home .hero-des {
+    padding-top: 2rem;
+  }
+  .button {
+    padding-top: 2rem;
+  }
+  .latestprj {
+    padding: 0rem;
+  }
+  .counter .line {
+    padding-top: 2rem;
+    height: 2px;
+    width: 100%;
+    border-bottom: 1px solid #54595f;
+  }
+  .secndimgpara1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .latestprj p {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+  .aboutuswholepara {
+    padding-top: 43px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    /* padding-right: 1rem;
+    padding-left: 1rem; */
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .imagedesabout p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .imagedesabout {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    gap: 15px;
+  }
+  .imagedesabout img {
+    width: 100%;
+  }
+  .abouteeimagee {
+    height: 650px;
+    width: 100%;
+  }
+  .counter-img {
+    width: 100%;
+  }
+  .counter-img img {
+    width: 100%;
+  }
+  .firstheading {
+    padding: 0 1rem;
+    font-size: 28px;
+  }
+  .servicesmainp {
+    font-size: 27px;
+  }
+  .latestprj p {
+    font-size: 27px;
+    padding: 0;
+  }
+  .servicesmain h3 {
+    margin: 0;
+  }
+  .servicesmain {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .secimg {
+    height: 99px;
+    width: 99px;
+  }
+  .secndimgpara {
+    display: flex;
+    flex-direction: column;
+  }
+}

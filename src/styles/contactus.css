@@ -1,0 +1,221 @@
+.contactmainhero {
+  background-image: url("../assets/project-hero1.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+.contactmainhero h1 {
+  font-size: 62px;
+  color: white;
+  padding-left: 7rem;
+  /* padding: 8rem 6rem; */
+  padding-top: 14rem;
+}
+.contact-form input,
+.contact-form textarea {
+  background-color: #f8f8f8;
+  border: 1px solid #e0e2e3;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.name-email input {
+  padding-left: 20px;
+  height: 70px;
+  width: 100%;
+  font-size: 16px;
+  color: black;
+}
+.phone-address input {
+  padding-left: 20px;
+
+  height: 70px;
+  width: 100%;
+  font-size: 16px;
+}
+.contact-form textarea {
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 199px;
+  width: 97%;
+  font-size: 16px;
+}
+.buttonsend button {
+  padding: 0 61px;
+  height: 70px;
+  line-height: 70px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form h1 {
+  font-size: 42px;
+  padding-bottom: 2rem;
+}
+.formget {
+  padding: 8rem 6rem;
+  display: flex;
+  gap: 73px;
+}
+.contact-form {
+  width: 1774px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.name-email {
+  display: flex;
+  gap: 20px;
+}
+.phone-address {
+  display: flex;
+  gap: 20px;
+}
+
+.getintouch h1 {
+  font-size: 42px;
+}
+.getintouch p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.address h4 {
+  padding-left: 55px;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.emailaddress h4 {
+  padding-left: 55px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.phonenumber h4 {
+  padding-left: 55px;
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.phoneicon {
+  height: 50px;
+  width: 50px;
+  border-radius: 35px;
+  background-color: #f8f8f8;
+  /* background-color: blue; */
+  position: relative;
+}
+.emailicon {
+  height: 50px;
+  width: 50px;
+  border-radius: 35px;
+  background-color: #f8f8f8;
+  /* background-color: blue; */
+  position: relative;
+}
+.locationicon {
+  height: 50px;
+  width: 50px;
+  border-radius: 35px;
+  background-color: #f8f8f8;
+  /* background-color: blue; */
+  position: relative;
+}
+.locationcontact {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 20px;
+}
+.phonecontact {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 20px;
+}
+.emailcontact {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 20px;
+}
+.symboltext {
+  display: flex;
+  gap: 10px;
+}
+.icontext {
+  display: flex;
+  gap: 10px;
+}
+.addresses {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 574px) {
+  .formget {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
+  .name-email {
+    display: flex;
+    flex-direction: column;
+  }
+  .phone-address {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
+  .contactmainhero h1 {
+    font-size: 50px;
+    padding-left: 2rem;
+  }
+  .contact-form h1 {
+    font-size: 36px;
+    padding-bottom: 2rem;
+  }
+}
+/* Ensure the text remains black when autofilled by the browser */
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #f8f8f8 inset;
+  -webkit-text-fill-color: black;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Ensure the border color remains the same when autofilled */
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+  border: 1px solid #e0e2e3 !important;
+}
+
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill:focus {
+  border: 1px solid #e0e2e3 !important;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #e0e2e3;
+  outline: none;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: #ccc; /* Optional: Change placeholder color on focus */
+}

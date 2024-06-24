@@ -1,0 +1,30 @@
+.director1 img {
+  height: 300px;
+  width: 400px;
+}
+.director1 h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
+}
+.director1 h6 {
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+}
+.directors {
+  display: flex;
+  align-items: center;
+  padding: 4rem 8rem;
+}
+.jobname {
+  text-align: center;
+}
+.director1 {
+}
+@media (max-width: 574px) {
+  .directors {
+    padding: 0rem;
+  }
+}

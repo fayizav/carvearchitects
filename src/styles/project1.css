@@ -1,0 +1,100 @@
+.herosection-project1 {
+  background-image: url("../assets/project-hero1.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+.herosection-project1 h3 {
+  font-size: 62px;
+  color: white;
+  padding-left: 7rem;
+  /* padding: 8rem 6rem; */
+  padding-top: 14rem;
+}
+.project1-secndsec {
+  padding-top: 8rem;
+}
+.project1-secndsec img {
+  height: 100%;
+  width: 100%;
+}
+.project1-img {
+  padding: 0rem 8rem;
+  position: relative;
+}
+.short-details {
+  left: 157px;
+  background-color: grey;
+  width: 20%;
+  /* height: 70%; */
+  padding: 1rem 2rem;
+  position: absolute;
+  /* top: 414px; */
+  bottom: -840px;
+}
+.short-details p {
+  line-height: 35px;
+}
+.twoimage img {
+  height: 50%;
+  width: 50%;
+}
+.twoimage {
+  padding: 8rem;
+  display: flex;
+  gap: 25px;
+}
+.points {
+  padding: 4rem 0rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* display: grid; */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.points p {
+  font-size: 20px;
+
+  position: relative;
+  padding-left: 20px; /* Space for the bullet */
+  color: grey; /* Text color */
+  margin: 10px 0; /* Vertical space between rows */
+  grid-template-columns: 1fr 1fr; /* Two items per row with gap adjustment */
+}
+
+.text-points {
+  place-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 8rem;
+}
+@media (max-width: 574px) {
+  .herosection-project1 h3 {
+    font-size: 50px;
+    padding-left: 2rem;
+  }
+  .twoimage {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+  }
+  .project1-img {
+    padding: 0rem;
+    height: 574px;
+    width: 100%;
+  }
+  .text-points {
+    padding: 0rem;
+  }
+  .twoimage img {
+    height: 100%;
+    width: 100%;
+  }
+}

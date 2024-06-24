@@ -1,0 +1,38 @@
+.counter {
+  padding-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.counter .p {
+  padding-top: 3rem;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+  margin: 0;
+}
+.counter p {
+  letter-spacing: 1.5px;
+
+  padding-top: 0.5rem;
+  line-height: 26px;
+  /* padding-bottom: 2rem; */
+  font-size: 16px;
+  font-weight: 400;
+  color: #54595f;
+  margin: 0;
+}
+.counter .line {
+  padding-top: 2rem;
+  height: 2px;
+  width: 150px;
+  border-bottom: 1px solid #54595f;
+}
+@media (max-width: 574px) {
+  .counter .line {
+    padding-top: 2rem;
+    height: 2px;
+    width: 100%;
+    border-bottom: 1px solid #54595f;
+  }
+}

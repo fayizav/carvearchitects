@@ -1,0 +1,71 @@
+.padding {
+  padding: 0rem 10rem;
+}
+
+.servicecards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding-top: 4rem;
+}
+/* .servicecard {
+  border: 1px solid grey;
+  padding: 2rem;
+} */
+.des p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #54595f;
+  /* text-align: justify; */
+  font-weight: 400;
+}
+.imagetitle {
+  display: flex;
+  gap: 25px;
+}
+.imagetitle h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+/* .servicecard:hover {
+  background-color: yellow;
+  color: white;
+  -webkit-transition: background-color 0.5s ease;
+} */
+.servicecard {
+  border: 1px solid #e6e6e6;
+  padding: 2rem;
+  background-color: white; /* Initial background color */
+  color: black; /* Initial text color */
+  transition: background-color 0.5s ease, color 0.5s ease; /* Standard transition */
+  -webkit-transition: background-color 0.5s ease, color 0.5s ease; /* WebKit transition */
+}
+
+.servicecard:hover {
+  background-color: black;
+  color: white;
+}
+.servicecard:hover .des p {
+  color: white;
+}
+.servicecard:hover .imagetitle img {
+  transform: scaleX(-1); /* Flip horizontally */
+  transition: transform 0.5s ease; /* Ensure smooth transition */
+}
+.imagetitle img {
+  height: 65px;
+  width: 65px;
+  transition: 0.5s ease;
+}
+@media (max-width: 570px) {
+  .padding {
+    padding: 0rem 2rem;
+  }
+  .servicecards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

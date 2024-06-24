@@ -1,0 +1,125 @@
+.main-form {
+  background-color: black;
+  display: flex;
+  gap: 150px;
+  padding-top: 4rem;
+}
+.texts {
+  padding-top: 4rem;
+  padding-left: 8rem;
+  /* padding-right: 8rem; */
+}
+.texts h5 {
+  color: #aaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
+.texts h1 {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 40px;
+  color: white;
+}
+.texts p {
+  font-size: 15px;
+  color: white;
+}
+.forms {
+  padding-right: 8rem;
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.forms input[type="email"],
+.forms input[type="tel"],
+.forms input[type="text"],
+.forms textarea {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 18px;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 15px;
+  border: 1px solid rgba(230, 230, 230, 0.4);
+  border-radius: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.forms input::placeholder,
+.forms textarea::placeholder {
+  color: white;
+}
+
+.forms input[type="email"]:focus,
+.forms input[type="tel"]:focus,
+.forms input[type="text"]:focus,
+.forms textarea:focus {
+  border: 1px solid rgba(230, 230, 230, 0.4);
+  outline: none;
+}
+
+.forms textarea {
+  resize: vertical; /* Allow vertical resize but not horizontal */
+  height: 150px; /* Increase the height of the message box */
+}
+.emailphn {
+  display: flex;
+  gap: 10px;
+}
+.emailphn input[type="email"],
+.emailphn input[type="tel"] {
+  flex: 1; /* Ensure both inputs take up equal space */
+}
+
+.forms button {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif; /* Change the button background color to match the form design */
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: 2px solid #a6a182;
+  color: white;
+  height: 65px;
+  line-height: 65px;
+  font-weight: 600;
+}
+
+.forms button:hover {
+  color: white;
+  background-color: #a6a182; /* Optional: Change the button color on hover */
+}
+.forms input:-webkit-autofill,
+.forms textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px black inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Ensure the border color remains the same when autofilled */
+.forms input:-webkit-autofill,
+.forms textarea:-webkit-autofill {
+  border: 1px solid rgba(230, 230, 230, 0.4) !important;
+}
+
+.forms input:-webkit-autofill:focus,
+.forms textarea:-webkit-autofill:focus {
+  border: 1px solid rgba(230, 230, 230, 0.4) !important;
+}
+@media (max-width: 574px) {
+  .forms {
+    width: 100%;
+    padding-top: 0rem;
+    padding-right: 0rem;
+  }
+  .texts {
+    padding-left: 0rem;
+  }
+  .texts h1 {
+    font-size: 30px;
+  }
+}
