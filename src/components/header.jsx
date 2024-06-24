@@ -34,8 +34,17 @@ function Header() {
     return (
         <div className='headermain'>
             <div className={`header ${isScrolled || !isHomePage ? 'scrolled' : ''}`}>
-                <div className='logo'>
+                {/* <div className='logo'>
                     <img src={logo} alt="Logo" />
+                </div> */}
+                <div className='logo'>
+                    {isHomePage ? (
+                        <img src={logo} alt="Logo" />
+                    ) : (
+                        <Link to="/">
+                            <img src={logo} alt="Logo" />
+                        </Link>
+                    )}
                 </div>
                 <div className='menu-icon' onClick={toggleMenu}>
                     <IoMdMenu className='menu' size={40} />
