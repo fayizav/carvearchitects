@@ -21,9 +21,8 @@ function ContactUsPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
-            const response = await fetch(`https://formspree.io/f/${process.env.FORMSPREE}`, {
+            const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
