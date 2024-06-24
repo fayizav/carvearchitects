@@ -1,4 +1,8 @@
 import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+
 import "../styles/aboutus.css";
 import aboutus2 from "../assets/aboutus.jpg";
 import marque1 from "../assets/slideshow1.jpg";
@@ -17,6 +21,11 @@ import { FaCheck } from "react-icons/fa6";
 
 
 function aboutuspage() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+    }, [location]);
     return (
         <div className="aboutmain">
             <div className="herosection-about">

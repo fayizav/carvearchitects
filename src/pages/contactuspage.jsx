@@ -3,9 +3,17 @@ import { FaPhone } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import "../styles/contactus.css";
 import { FaPhoneAlt } from "react-icons/fa";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 
 function ContactUsPage() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+    }, [location]);
     const [formData, setFormData] = useState({
         firstName: '',
         email: '',

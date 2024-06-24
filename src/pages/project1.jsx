@@ -2,8 +2,16 @@ import React from "react";
 import "../styles/project1.css";
 import { useParams } from "react-router-dom";
 import { projectlist } from "../helpers/projectlist";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 function Project1() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+    }, [location]);
     const { id } = useParams();
     console.log("Received ID:", id); // Debug log
 

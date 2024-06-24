@@ -3,8 +3,16 @@ import "../styles/projectsmain.css";
 import { projectlist } from "../helpers/projectlist";
 import Form from "../components/form";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 
 function Projectsmain() {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+    }, [location]);
     const [activeProjectIndex, setActiveProjectIndex] = useState(0); // Show "All Projects" by default
     const [visibleImageIndex, setVisibleImageIndex] = useState(null);
 
