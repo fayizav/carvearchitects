@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/footer.css";
+import { Link } from "react-router-dom"
 import logo from "../assets/logo.png";
 import { useLocation } from "react-router-dom";
 import { FaAngleDoubleRight, FaPhone } from "react-icons/fa";
@@ -40,7 +41,10 @@ function Footer() {
                     </div>
                     <div className="submain">
                         <p className="subtitle3">
-                            Instagram <FaAngleDoubleRight className="arrow3" />
+
+                            <a href="https://www.instagram.com/carve_architect?igsh=MTZic3ZxamdhMGs1bw%3D%3D&utm_source=qr" target="blank" rel="noopener noreferrer">
+                                Instagram <FaAngleDoubleRight className="arrow3" />
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -50,16 +54,16 @@ function Footer() {
                     <div className="subtitle">
                         <div className="loc">
                             <MdLocationOn className="location" />
-                            <p className="ppp">Manjeri Kacheripadi</p><br />
+                            <p className="ppp">Citypoint Manjeri</p><br />
                         </div>
                         <div className="em">
                             <MdEmail className="email" />
-                            <p className="ppp">carvearchitects@gmail.com</p><br />
+                            <p className="ppp">carvearchi@gmail.com</p><br />
                         </div>
                         <div className="ph">
                             <FaPhoneAlt
                                 className="phone" />
-                            <p className="ppp">Phone: +91 9745700108</p>
+                            <p className="ppp">Phone: 8593076469</p>
                         </div>
                     </div>
                 </div>
@@ -78,11 +82,7 @@ function Footer() {
                 <div className="copyright">
                     <p>Copyright © 2024 Carve Architects. All Rights Reserved</p>
                 </div>
-                <div className="terms">
-                    <p>Terms and Conditions</p>
-                    <p>Privacy Policy</p>
-                    <p>Sitemap</p>
-                </div>
+
             </div>
 
         </div >

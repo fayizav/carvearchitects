@@ -1,4 +1,8 @@
-import director1 from "../assets/faruq.jpg";
+import director1 from "../assets/ummarfaruq.jpg";
+
+import director2 from "../assets/ihsan.jpg";
+import director3 from "../assets/farzeen.jpeg";
+
 
 
 
@@ -8,23 +12,11 @@ export const directorslist = [{
     name: "Ummar Faruq",
     job: "Civil Engineer"
 }, {
-    image: director1,
-    name: "Ihsan Saleem",
+    image: director2,
+    name: "Ihsan Salim",
     job: "Civil Engineer"
 }, {
-    image: director1,
-    name: "Farsi",
+    image: director3,
+    name: "Farzeen",
     job: "Civil Engineer"
-}, {
-    image: director1,
-    name: "Ummar Faruq",
-    job: "Civil Engineer"
-}, {
-    image: director1,
-    name: "Ihsan Saleem",
-    job: "Civil Engineer"
-}, {
-    image: director1,
-    name: "Farsi",
-    job: "Civil Engineer"
-}]
+},]

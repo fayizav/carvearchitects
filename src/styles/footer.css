@@ -13,7 +13,9 @@
   background-color: black;
   color: white;
 }
-
+/* .submain Link {
+  text-decoration: none;
+} */
 .black-bg {
   background-color: black;
 }
@@ -175,16 +177,6 @@
   left: -22px;
 }
 
-.footerend {
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  border-top: 1px solid #a6a182;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
-}
-
 .terms {
   display: flex;
   gap: 106px;
@@ -210,6 +202,23 @@
   font-size: 25px;
   color: white;
   font-weight: 600;
+}
+.subtitle3 {
+  position: relative;
+}
+.subtitle3 a {
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footerend {
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  border-top: 1px solid #a6a182;
+  display: flex;
+  /* justify-content: space-between; */
+  /* padding: 1rem 4rem; */
 }
 @media (max-width: 574px) {
   .mainfooter {

@@ -7,6 +7,8 @@ import Projects from "./pages/projectsmain"
 import Aboutus from "./pages/aboutuspage"
 import Contactus from "./pages/contactuspage"
 import Test from "./pages/test"
+import Interior from "./pages/interior"
+
 
 
 import Project1 from "./pages/project1"
@@ -31,6 +33,8 @@ function App() {
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/interiors" element={<Interior />} />
+
 
 
 

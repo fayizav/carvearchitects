@@ -34,7 +34,6 @@ function Project1() {
     return (
         <div className="main-project1">
             <div className="herosection-project1">
-                <h3>{imageDetails.title}</h3>
             </div>
             <div className="project1-secndsec">
                 <div className="project1-img">
@@ -49,10 +48,10 @@ function Project1() {
                     </div>
                 </div>
                 <div className="titledescription"></div>
-                <div className="twoimage">
+                {/* <div className="twoimage">
                     <img src={imageDetails.subimage1} alt={imageDetails.title} />
                     <img src={imageDetails.subimage2} alt={imageDetails.title} />
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -1,6 +1,11 @@
-.director1 img {
-  height: 300px;
+.director1image {
   width: 400px;
+  height: 306px;
+}
+.director1image img {
+  width: 400px;
+  height: 306px;
+  object-fit: cover;
 }
 .director1 h3 {
   font-size: 25px;
@@ -13,9 +18,9 @@
   color: black;
   margin: 0;
 }
-.directors {
-  display: flex;
-  align-items: center;
+.directors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 4rem 8rem;
 }
 .jobname {
@@ -26,5 +31,10 @@
 @media (max-width: 574px) {
   .directors {
     padding: 0rem;
+  }
+  .directors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }

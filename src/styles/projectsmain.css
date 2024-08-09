@@ -60,51 +60,24 @@
   padding-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
 }
-
+.projects-images button {
+  border-radius: 47px;
+  position: absolute;
+  bottom: 9px;
+  right: 5px;
+  background: #a6a182;
+  border: none;
+  /* border: 1px solid white; */
+  color: white;
+  padding: 1rem 2rem;
+}
 .imagemap {
   position: relative;
   overflow: hidden;
 }
 
-.image-info {
-  place-items: center;
-  position: absolute;
-  top: 97px;
-  left: 38px;
-  width: 66%;
-  height: 56%;
-  /* background: rgba(0, 0, 0, 0.7); */
-  background: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: rotateY(90deg);
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-}
-.image-info {
-  place-items: center;
-  position: absolute;
-  top: 81px;
-  left: 38px;
-  width: 66%;
-  height: 60%;
-  /* background: rgba(0, 0, 0, 0.7); */
-  background: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: rotateY(90deg);
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-}
 .image-info .visible h3 {
   margin: 0;
 }

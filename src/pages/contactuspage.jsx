@@ -90,7 +90,7 @@ function ContactUsPage() {
                                 <div className="locationicon">
                                     <MdLocationOn className="locationcontact" />
                                 </div>
-                                <p>Dhaka 102, utl 1216, road 45 house shantighar rahuta, 1213</p>
+                                <p>Citypoint Manjeri</p>
                             </div>
                         </div>
                         <div className="emailaddress">
@@ -99,7 +99,7 @@ function ContactUsPage() {
                                 <div className="emailicon">
                                     <MdEmail className="emailcontact" />
                                 </div>
-                                <p>carvearchitects@gmail.com</p>
+                                <p>carvearchi@gmail.com</p>
                             </div>
                         </div>
                         <div className="phonenumber">
@@ -109,7 +109,7 @@ function ContactUsPage() {
                                     <FaPhoneAlt
                                         className="phonecontact" />
                                 </div>
-                                <p>9745700108</p>
+                                <p>8593076469</p>
                             </div>
                         </div>
                     </div>

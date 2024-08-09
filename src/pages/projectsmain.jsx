@@ -1,24 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/projectsmain.css";
 import { projectlist } from "../helpers/projectlist";
 import Form from "../components/form";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-
 
 function Projectsmain() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top of the page on component mount
     }, [location]);
+
     const [activeProjectIndex, setActiveProjectIndex] = useState(0); // Show "All Projects" by default
     const [visibleImageIndex, setVisibleImageIndex] = useState(null);
 
     const handleProjectClick = (index) => {
-        setActiveProjectIndex(index);
-        setVisibleImageIndex(null); // Reset visible image when project changes
+        if (projectlist[index].title === "Interiors") {
+            navigate("/interiors");
+        } else {
+            setActiveProjectIndex(index);
+            setVisibleImageIndex(null); // Reset visible image when project changes
+        }
     };
 
     const handleMouseEnter = (imageIndex) => {
@@ -57,22 +61,24 @@ function Projectsmain() {
                             key={imageIndex}
                             className="imagemap"
                             onMouseEnter={() => handleMouseEnter(imageIndex)}
-                        ><div className="projectimages">
+                        >
+                            <div className="projectimages">
                                 <img
                                     src={image.src}
                                     alt={`Project ${activeProjectIndex} Image ${imageIndex}`}
                                 />
+                                <Link to={`/project1/${image.id}`}>
+                                    <button>Read more</button>
+                                </Link>
                             </div>
-                            <div
+                            {/* <div
                                 className={`image-info ${visibleImageIndex === imageIndex ? "visible" : ""
                                     }`}
                             >
-                                <h3>{image.title}</h3>
-                                <p>{image.desc}</p>
                                 <Link to={`/project1/${image.id}`}>
                                     <button className="readbutton">Read More</button>
-                                </Link>{" "}
-                            </div>
+                                </Link>
+                            </div> */}
                         </div>
                     ))}
                 </div>

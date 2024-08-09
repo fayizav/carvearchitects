@@ -106,7 +106,7 @@
   font-size: 20px;
   color: #a6a182;
   text-align: center;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 .founders h6 {
   font-weight: 700;
@@ -225,8 +225,8 @@
     font-size: 19px;
   }
   .founders {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .founders h6 {
     font-size: 29px;
